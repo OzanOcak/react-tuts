@@ -2,6 +2,8 @@ import "./App.css";
 import CheckBox from "./components/CheckBox";
 import ColorPicker from "./components/ColorPicker";
 import ColorPicker2 from "./components/ColorPicker2";
+import ColorPicker3 from "./components/ColorPicker3";
+import Greetings from "./components/Greetings";
 import HelpDesk from "./components/HelpDesk";
 import IncByReducer from "./components/IncByReducer";
 import StarRating from "./components/StarRating";
@@ -17,6 +19,8 @@ function App() {
       <HelpDesk />
       <ColorPicker />
       <ColorPicker2 />
+      <ColorPicker3 />
+      <Greetings />
     </>
   );
 }
