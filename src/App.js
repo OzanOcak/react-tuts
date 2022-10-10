@@ -14,15 +14,14 @@ function App() {
     <>
       <CheckBox />
       <StarRating totalStars={10} />
-      if(data)
-      {
+      {data && (
         <ul>
           {" "}
           {data.map((user) => (
             <li key={user.id}>{user.login}</li>
           ))}
         </ul>
-      }
+      )}
     </>
   );
 }
