@@ -1,5 +1,4 @@
 import "./App.css";
-import CheckBox from "./components/CheckBox";
 import ColorPicker from "./components/ColorPicker";
 import ColorPicker2 from "./components/ColorPicker2";
 import ColorPicker3 from "./components/ColorPicker3";
@@ -7,14 +6,11 @@ import Greetings from "./components/Greetings";
 import HelpDesk from "./components/HelpDesk";
 import IncByReducer from "./components/IncByReducer";
 import GithubProfile from "./components/GithubProfile";
-import StarRating from "./components/StarRating";
 import UserList from "./components/UserList";
 
 function App() {
   return (
-    <>
-      <CheckBox />
-      <StarRating totalStars={10} />
+    <div className="flex flex-col justify-center items-center">
       <UserList />
       <IncByReducer />
       <HelpDesk />
@@ -23,7 +19,9 @@ function App() {
       <ColorPicker3 />
       <Greetings />
       <GithubProfile login="OzanOcak" />
-    </>
+      <GithubProfile login="npentrel" />
+      <GithubProfile login="wycats" />
+    </div>
   );
 }
 

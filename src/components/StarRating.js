@@ -11,18 +11,21 @@ const StarRating = ({ totalStars }) => {
     console.log(`${selectedStars} of ${totalStars}`);
   }, [selectedStars]);
   return (
-    <>
-      {[...Array(totalStars)].map((n, i) => (
-        <Star
-          key={i}
-          selected={selectedStars > i}
-          onSelect={() => setSelectedStars(i + 1)}
-        />
-      ))}
-      <p>
+    <div className="flex flex-row m-2 p-1 border rounded-[.8rem] w-[15.5rem] hover:bg-[lightgray]">
+      <div className="flex flex-row mt-1">
+        {[...Array(totalStars)].map((n, i) => (
+          <Star
+            key={i}
+            selected={selectedStars > i}
+            onSelect={() => setSelectedStars(i + 1)}
+          />
+        ))}
+      </div>
+
+      <p className="ml-4  text-md font-bold">
         {selectedStars} of {totalStars}
       </p>
-    </>
+    </div>
   );
 };
 export default StarRating;

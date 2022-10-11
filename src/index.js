@@ -12,7 +12,7 @@ const greetings = [
   { id: "4", greet: "hallo" },
 ];
 
-export const useGreetings = () => useContext(GreetingContext); // custom hook to import
+export const useGreetings = () => useContext(GreetingContext); // custom hook
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
