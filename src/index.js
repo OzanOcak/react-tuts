@@ -1,4 +1,4 @@
-import React, { createContext } from "react";
+import React, { createContext, useContext } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
@@ -11,6 +11,8 @@ const greetings = [
   { id: "3", greet: "hola" },
   { id: "4", greet: "hallo" },
 ];
+
+export const useGreetings = () => useContext(GreetingContext); // custom hook to import
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

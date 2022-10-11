@@ -6,6 +6,7 @@ import ColorPicker3 from "./components/ColorPicker3";
 import Greetings from "./components/Greetings";
 import HelpDesk from "./components/HelpDesk";
 import IncByReducer from "./components/IncByReducer";
+import GithubProfile from "./components/GithubProfile";
 import StarRating from "./components/StarRating";
 import UserList from "./components/UserList";
 
@@ -21,6 +22,7 @@ function App() {
       <ColorPicker2 />
       <ColorPicker3 />
       <Greetings />
+      <GithubProfile login="OzanOcak" />
     </>
   );
 }
