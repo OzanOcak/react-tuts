@@ -22,7 +22,7 @@ const ColorPicker2 = () => {
         value={color}
         onChange={(e) => setColor(e.target.value)}
       ></input>
-      <button type="submit" onClick={submit}>
+      <button className="btn" type="submit" onClick={submit}>
         Submit it
       </button>
     </form>

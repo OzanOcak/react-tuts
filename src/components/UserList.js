@@ -10,14 +10,14 @@ const UserList = () => {
   });
   console.log(users);
   return (
-    <>
+    <div className="list-none">
       {users &&
         users.map((user) => (
           <li key={user.id}>
             <GithubProfile login={user.login} />
           </li>
         ))}
-    </>
+    </div>
   );
 };
 export default UserList;

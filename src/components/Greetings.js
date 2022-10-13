@@ -7,8 +7,13 @@ const Greetings = () => {
   //const { greetings } = useContext(GreetingContext); // greeting is an array
   const { greetings } = useGreetings();
   return (
-    <ul>
-      {greetings && greetings.map((el) => <li key={el.id}>{el.greet}</li>)}
+    <ul className="flex flex-row divide-x-2 divide-solid py-5 top-0 fixed bg-[lightgray] w-full justify-content items-start ">
+      {greetings &&
+        greetings.map((el) => (
+          <li className="px-4" key={el.id}>
+            {el.greet}
+          </li>
+        ))}
     </ul>
   );
 };

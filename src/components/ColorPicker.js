@@ -15,10 +15,27 @@ const ColorPicker = () => {
     color.current.value = "";
   };
   return (
-    <form onSubmit={submit}>
-      <input type="text" ref={text} placeholder="enter your color" />
-      <input type="color" ref={color} />
-      <button type="submit" onClick={submit}>
+    <form
+      className="my-6 p-2 border-2  border-solid justify-content items-baseline space-x-2"
+      onSubmit={submit}
+    >
+      <input
+        className="palceholder-gray-500 border rounded-md p-2 my-1"
+        type="text"
+        ref={text}
+        placeholder="enter your color"
+      />
+      <input
+        className="border-blue-500 border-2 h-10 rounded-md  border-solid "
+        type="color"
+        ref={color}
+      />
+      <button
+        className="border-blue-500 border-2 h-10 rounded-md p-1 border-solid hover:text-white
+         hover:bg-blue-500"
+        type="submit"
+        onClick={submit}
+      >
         submit
       </button>
     </form>

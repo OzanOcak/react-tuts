@@ -10,17 +10,35 @@ import UserList from "./components/UserList";
 
 function App() {
   return (
-    <div className="flex flex-col justify-center items-center">
-      <UserList />
+    <div
+      className="flex flex-col  justify-center items-center bg-gradient-to-tr
+     from-gray-500 to-gray-10  w-full relative"
+    >
+      <Greetings />
+      {/*<UserList />*/}
       <IncByReducer />
       <HelpDesk />
       <ColorPicker />
       <ColorPicker2 />
       <ColorPicker3 />
-      <Greetings />
-      <GithubProfile login="OzanOcak" />
+      <IncByReducer />
+      <HelpDesk />
+      <ColorPicker />
+      <ColorPicker2 />
+      <ColorPicker3 />
+      <IncByReducer />
+      <HelpDesk />
+      <ColorPicker />
+      <ColorPicker2 />
+      <ColorPicker3 />
+      <IncByReducer />
+      <HelpDesk />
+      <ColorPicker />
+      <ColorPicker2 />
+      <ColorPicker3 />
+      {/*<GithubProfile login="OzanOcak" />
       <GithubProfile login="npentrel" />
-      <GithubProfile login="wycats" />
+      <GithubProfile login="wycats" />*/}
     </div>
   );
 }

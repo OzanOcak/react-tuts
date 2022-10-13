@@ -6,13 +6,15 @@ const IncByReducer = () => {
     0
   );
   return (
-    <h1
-      onClick={() => {
-        setNumber(1);
-      }}
-    >
-      {number}
-    </h1>
+    <div className="mt-20">
+      <h1
+        onClick={() => {
+          setNumber(1);
+        }}
+      >
+        {number}
+      </h1>
+    </div>
   );
 };
 export default IncByReducer;

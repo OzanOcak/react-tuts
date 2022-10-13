@@ -9,7 +9,7 @@ const GithubProfile = ({ login }) => {
   if (loading) return <h1>loading....</h1>;
   if (error) return <pre>{JSON.stringify(error, null, 2)}</pre>;
   return (
-    <div className="flex flex-row">
+    <div className="flex flex-row mb-4">
       {/*<pre>{JSON.stringify(data, null, 2)}</pre>*/}
       <div className="w-[9.5rem] p-1 hover:w-[9.75rem] hover:pr-0">
         <img
@@ -18,9 +18,9 @@ const GithubProfile = ({ login }) => {
           className="bg-contain rounded-xl"
         />
       </div>
-      <div>
+      <div className="divide-y-2">
         <div className="pl-3">
-          <h1>Username: {data.login}</h1>
+          <h1>{data.login}</h1>
           <p>Name: {data.name}</p>
           <p>Location: {data.location}</p>
         </div>
